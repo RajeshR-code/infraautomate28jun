@@ -17,3 +17,9 @@ jobs:
         run: pwd
       - name: showconfigurationfile
         run: ls -la
+      - name: terraform_init
+        run: terraform init
+      - name: terraform_plan
+        run: terraform plan     
+      - name: terraform_apply
+        run: terraform apply --auto-approve
